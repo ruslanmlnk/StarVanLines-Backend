@@ -19,8 +19,7 @@ router.post('/send', async (req, res) => {
     ];
 
     await mailService.sendMail({
-      subject: 'Subject',
-      html: 'Content',
+      subject: 'Your Checklist: 10 steps to Perfect Packing',
       to: [EmailAddress],
       attachments
     });
