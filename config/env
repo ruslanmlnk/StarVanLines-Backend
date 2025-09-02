@@ -20,5 +20,5 @@ UTM_TAGS=utm_source,utm_medium,utm_campaign,utm_content,utm_term
 MOVEGISTICS_TOKEN=bW92ZWdpc3RpY3MtY3JtLWxlYWQtbWNj
 
 # Assets and templates
-CHECKLIST_PDF_PATH=assets\\Checklist.pdf
-TEMPLATES_DIR=src\\templates
+CHECKLIST_PDF_PATH=assets/Checklist.pdf
+TEMPLATES_DIR=src/templates
