@@ -20,6 +20,7 @@ function replacePlaceholders(template, replacements) {
 }
 
 function getUtmCookies(req) {
+  return []; // TODO: Remove this after testing
   const tags = config.utmTags;
   const utm = [];
   for (const tag of tags) {
