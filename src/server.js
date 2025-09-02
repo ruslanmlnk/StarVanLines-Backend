@@ -44,7 +44,14 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ error: err?.message || 'Internal Server Error' });
 });
 
-await initTemplates();
+try {
+  console.log('Initializing templates...');
+  await initTemplates();
+  console.log('Templates initialized successfully');
+} catch (error) {
+  console.error('Error initializing templates:', error);
+  process.exit(1);
+}
 
 app.listen(config.port, () => {
   console.log(`Server listening on port ${config.port}`);
