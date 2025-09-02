@@ -5,6 +5,10 @@ import { config } from '../config.js';
 const router = Router();
 
 router.post('/send', async (req, res) => {
+  console.log('=== Granot /send endpoint hit ===');
+  console.log('Request body:', req.body);
+  console.log('Request headers:', req.headers);
+  
   try {
     const payload = req.body || {};
     
