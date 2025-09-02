@@ -14,7 +14,6 @@ router.post('/send', async (req, res) => {
     
     const granotData = new URLSearchParams({
       firstname: payload.firstname || '',
-      lastname: payload.lastname || '',
       ozip: payload.ozip || '',
       dzip: payload.dzip || '',
       volume: payload.volume || '',
