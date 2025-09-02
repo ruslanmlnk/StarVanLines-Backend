@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser';
 import { config } from './config.js';
 import sendRoutes from './routes/send.routes.js';
 import movegisticsRoutes from './routes/movegistics.routes.js';
+import granotRoutes from './routes/granot.routes.js';
 import checklistRoutes from './routes/checklist.routes.js';
 import { initTemplates } from './templates/templateCache.js';
 
@@ -34,6 +35,7 @@ app.use(cors(corsOptions));
 
 app.use('/send', sendRoutes);
 app.use('/Movegistics', movegisticsRoutes);
+app.use('/Granot', granotRoutes);
 app.use('/Checklist', checklistRoutes);
 
 app.get('/health', (_req, res) => res.json({ status: 'ok', ts: Date.now() }));
